@@ -6,8 +6,10 @@ const Shop = () => {
 			<div className='page-container'>
 				<section>
 					<article>
-						<h2>SHOPPPPP</h2>
-						<p>Buy 2 items and get one 50% off! </p>
+						<div className='shop-div'>
+							<h2>SHOPPPPP</h2>
+							<p>Buy 2 items and get one 50% off! </p>
+						</div>
 						<ArtList />
 					</article>
 				</section>

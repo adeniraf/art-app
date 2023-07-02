@@ -7,7 +7,6 @@ const HomePage = () => {
 		<>
 			<div className='page-container'>
 				<Header />
-				<ArtList />
 			</div>
 		</>
 	)

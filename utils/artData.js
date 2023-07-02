@@ -11,7 +11,7 @@ const artData = [
 		name: 'Mona Lisa',
 		description:
 			'The iconic portrait painting by Leonardo da Vinci, known for its enigmatic smile.',
-		imageSrc: '../src/assets/a.jpg',
+		imageSrc: '../src/assets/francesco-bianco.jpg',
 	},
 	{
 		id: 3,

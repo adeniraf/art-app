@@ -30,6 +30,21 @@
 	color: rgb(204, 17, 17);
 }
 
+.nav-btn {
+	padding: 0.75em;
+	font-weight: bold;
+	background-color: gray;
+	border: none;
+	border-radius: 15px;
+	font-size: 0.75rem;
+	color: white;
+	transition: transform 0.2s;
+}
+
+.nav-btn:hover {
+	transform: scale(1.1);
+}
+
 @media (max-width: 600px) {
 	.navbar ul {
 		display: none;

@@ -1,4 +1,5 @@
 import './NavBar.css'
+import { Link } from 'react-router-dom'
 // add pagination to the link items later
 
 const NavBar = () => {
@@ -12,7 +13,7 @@ const NavBar = () => {
 					<div>
 						<ul className='nav-list'>
 							<li>
-								<a href=''>HOME</a>
+								<Link to=''>HOME</Link>
 							</li>
 							<li>
 								<a href=''>ABOUT</a>
