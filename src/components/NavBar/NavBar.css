@@ -1,0 +1,42 @@
+.navbar {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 0.5em;
+	box-shadow: 0 0px 5px black;
+
+}
+
+.navbar ul {
+	list-style-type: none;
+}
+
+.nav-list {
+	display: flex;
+}
+
+.nav-list li {
+	margin: 1em;
+	font-weight: bold;
+}
+
+.nav-list a {
+	text-decoration: none;
+	color: black;
+}
+
+.nav-list a:hover {
+	text-decoration: underline;
+	color: rgb(204, 17, 17);
+}
+
+@media (max-width: 600px) {
+	.navbar ul {
+		display: none;
+	}
+
+	.nav-btn {
+		display: none;
+	}
+}

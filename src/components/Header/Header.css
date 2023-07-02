@@ -1,0 +1,33 @@
+h1 {
+	font-size: 2em;
+}
+
+section {
+	width: 100%;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.hero-div {
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+}
+
+.hero-img {
+	width: 100%;
+	background-size: contain;
+}
+
+.hero-text {
+	position: absolute;
+	text-align: center;
+	color: white;
+	text-shadow: 2px 2px black;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+}
+
+

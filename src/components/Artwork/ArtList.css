@@ -1,0 +1,16 @@
+.search-input {
+	width: 100%;
+	max-width: 400px;
+	text-align: center;
+	margin: 1em 0;
+	border: 2px solid black;
+	border-radius: 99999px;
+	color: rgb(56, 55, 55);
+	line-height: 2.5;
+	padding: 0 1em;
+}
+
+.form-container {
+	display: flex;
+	justify-content: center;
+}
