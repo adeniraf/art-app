@@ -1,0 +1,17 @@
+.art-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	box-sizing: border-box;
+	box-shadow: 1px 2px black;
+
+	width: 250px;
+	height: 400px;
+	padding: 0.5em;
+}
+
+.art-card h3 {
+	overflow-wrap: break-word;
+}

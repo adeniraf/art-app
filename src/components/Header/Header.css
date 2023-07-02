@@ -9,25 +9,10 @@ section {
 }
 
 .hero-div {
-	height: 300px;
-	overflow: hidden;
-	position: relative;
+	min-height: 30vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-image: url(../src/assets/francesco-bianco.jpg);
 }
-
-.hero-img {
-	width: 100%;
-	background-size: contain;
-}
-
-.hero-text {
-	position: absolute;
-	text-align: center;
-	color: white;
-	text-shadow: 2px 2px black;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	z-index: 1;
-}
-
-

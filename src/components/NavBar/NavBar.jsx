@@ -1,12 +1,7 @@
 import './NavBar.css'
 // add pagination to the link items later
 
-const NavBar = ({ setIsModalOpen, open }) => {
-	const handleClick = () => {
-		setIsModalOpen((prev) => {
-			return !prev
-		})
-	}
+const NavBar = () => {
 	return (
 		<>
 			<header className='container'>
@@ -28,11 +23,7 @@ const NavBar = ({ setIsModalOpen, open }) => {
 						</ul>
 					</div>
 					<div>
-						<button
-							className='nav-btn'
-							onClick={handleClick}>
-							CONTACT ME
-						</button>
+						<button className='nav-btn'>CONTACT ME</button>
 					</div>
 				</nav>
 			</header>

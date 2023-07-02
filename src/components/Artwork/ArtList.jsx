@@ -1,37 +1,27 @@
-import { useState } from 'react'
-import axios from 'axios'
+import artData from '../../../utils/artData'
 import './ArtList.css'
+import ArtCard from './ArtCard'
 
 const ArtList = () => {
-	const [search, setSearch] = useState('')
+	const artElements = artData.map((artEl) => {
+		return (
+			<>
+				<ArtCard
+					key={artEl.id}
+					id={artEl.id}
+					name={artEl.name}
+					description={artEl.description}
+					imageSrc={artEl.imageSrc}
+				/>
+			</>
+		)
+	})
 
-	// const handleSubmit = async (e) => {
-	// 	e.preventDefault()
-	// 	async function fetchData() {
-	// 		const URL = `https://musicbrainz.org/doc/Cover_Art_Archive/API/release/${}`
-	// 		try {
-	// 			const response = await axios.get(URL)
-	// 			console.log(`Data: ${response}`)
-	// 		} catch (err) {
-	// 			console.log(`Error: ${err}`)
-	// 		}
-	// 	}
-	// }
+	console.log(artData)
 
 	return (
 		<>
-			<form
-				className='form-container'
-				onSubmit='{handleSubmit}'>
-				<input
-					type='text'
-					className='search-input'
-					onChange={(e) => {
-						setSearch(e.target.value)
-					}}
-					value={search}
-				/>
-			</form>
+			<div className='app-container art-div'>{artElements}</div>
 		</>
 	)
 }

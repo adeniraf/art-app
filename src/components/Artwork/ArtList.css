@@ -1,16 +1,11 @@
-.search-input {
-	width: 100%;
-	max-width: 400px;
-	text-align: center;
-	margin: 1em 0;
-	border: 2px solid black;
-	border-radius: 99999px;
-	color: rgb(56, 55, 55);
-	line-height: 2.5;
-	padding: 0 1em;
-}
-
-.form-container {
+.app-container {
 	display: flex;
+	flex-wrap: wrap;
+	flex: 1 1 200px;
 	justify-content: center;
+	align-items: center;
+	gap: 2em;
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
 }

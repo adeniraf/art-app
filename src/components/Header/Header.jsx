@@ -1,21 +1,21 @@
 import './Header.css'
+import { useNavigate } from 'react-router-dom'
 
 const Header = () => {
+	const navigate = useNavigate()
+
+	const handleClick = () => {
+		navigate('/Shop')
+	}
+
 	return (
 		<>
 			<section>
 				<div className='hero-div container'>
-					<img
-						src='../src/assets/francesco-bianco.jpg'
-						alt='hero-img'
-						className='hero-img'
-					/>
-					<div className='hero-text'>
-						<h1>Discover the world</h1>
-						<p>through Nadja&apos;s eyes</p>
-					</div>
+					<h1>Discover the world</h1>
+					<p>through Nadja&apos;s eyes</p>
+					<button onClick={handleClick}>SHOP</button>
 				</div>
-				
 			</section>
 		</>
 	)
