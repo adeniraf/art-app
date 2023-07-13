@@ -1,11 +1,12 @@
 import './NavBar.css'
 import { Link } from 'react-router-dom'
+import { FaShoppingCart } from 'react-icons/fa'
 // add pagination to the link items later
 
 const NavBar = () => {
 	return (
 		<>
-			<header className='container'>
+			<header className='nav-header container'>
 				<nav className='navbar'>
 					<div>
 						<h2 className='x-bold'>ARTIFY</h2>
@@ -24,6 +25,11 @@ const NavBar = () => {
 						</ul>
 					</div>
 					<div>
+						<FaShoppingCart
+							onClick={() => {
+								console.log('Opening cart')
+							}}
+						/>
 						<button className='nav-btn'>CONTACT ME</button>
 					</div>
 				</nav>

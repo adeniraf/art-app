@@ -7,6 +7,11 @@
 	box-shadow: 0 0px 5px black;
 }
 
+.nav-header {
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
 .navbar ul {
 	list-style-type: none;
 }
@@ -39,6 +44,7 @@
 	font-size: 0.75rem;
 	color: white;
 	transition: transform 0.2s;
+	cursor: pointer;
 }
 
 .nav-btn:hover {
